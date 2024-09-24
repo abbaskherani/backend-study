@@ -2,11 +2,11 @@
 // and for using the environment variables
 // also for using the .env file
 // and for prtecting the sensitive information
+
+
 const express = require("express");
 require("dotenv").config();
 const app = express();
-// const 
-
 const githubData = {
     name: "abbas kherani",
     age: 25,
@@ -17,6 +17,7 @@ const githubData = {
     state: "Maharashtra",
     zip: "442905"
 }
+
 app.get('/github', (req,res)=> {
     res.json(githubData);
 })
