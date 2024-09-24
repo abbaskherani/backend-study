@@ -5,8 +5,21 @@
 const express = require("express");
 require("dotenv").config();
 const app = express();
+// const 
 
-
+const githubData = {
+    name: "abbas kherani",
+    age: 25,
+    email: "aounabbaskherani@gmail.com",
+    phone: 8830514268,
+    address: "Rajura",
+    city: "Chandrapur",
+    state: "Maharashtra",
+    zip: "442905"
+}
+app.get('/github', (req,res)=> {
+    res.json(githubData);
+})
 //65430 total ports
 app.get("/", (req, res) => {
   res.send("Hello World");
